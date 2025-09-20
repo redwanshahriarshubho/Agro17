@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri 17 - Buy/Sell Vegetables, Fruits & Seeds Online</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-green-700 text-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">Agri 17 Bazaar</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:underline">Home</a>
+                <a href="#products" class="hover:underline">Products</a>
+                <a href="#sell" class="hover:underline">Sell</a>
+                <a href="#billing" class="hover:underline">Billing</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <!-- Simulated Login State -->
+                <!-- Show "Login" if not logged in -->
+                <a href="#login-modal" class="hidden bg-white text-green-700 px-4 py-2 rounded-lg font-medium md:inline-block">Login</a>
+                <!-- Show User Menu if logged in (uncomment to simulate logged in) -->
+                <div class="flex items-center space-x-2">
+                    <span class="text-sm">Hi, User</span>
+                    <a href="#" class="bg-white text-green-700 px-3 py-1 rounded text-sm font-medium">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-green-600 to-emerald-700 text-white py-20 text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Fresh Vegetables, Fruits & Seeds Direct from Farmers</h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Order organic, fresh, and healthy farm products from the comfort of your home.</p>
+            <button class="bg-white text-green-700 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition">Buy Now</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Product 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="img/Tomato.jpg" alt="Tomato" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2">Tomato</h3>
+                        <p class="text-green-700 font-bold text-lg">৳ 40 / kg</p>
+                        <p class="text-gray-600 mb-4">Fresh organic tomatoes, direct from farm.</p>
+                        <div class="flex space-x-3">
+                            <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 w-full">Buy</button>
+                            <button class="border border-green-600 text-green-600 px-4 py-2 rounded hover:bg-green-50 w-full">Sell</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="img/Mangooo" alt="Mango" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2">Mango</h3>
+                        <p class="text-green-700 font-bold text-lg">৳ 120 / kg</p>
+                        <p class="text-gray-600 mb-4">Sweet ripe Himsagar mango.</p>
+                        <div class="flex space-x-3">
+                            <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 w-full">Buy</button>
+                            <button class="border border-green-600 text-green-600 px-4 py-2 rounded hover:bg-green-50 w-full">Sell</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="img/Crop Seeds.jpg" alt="Seeds" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold mb-2">Crop Seeds</h3>
+                        <p class="text-green-700 font-bold text-lg">৳ 80 / packet</p>
+                        <p class="text-gray-600 mb-4">High-yield organic certified rice seeds.</p>
+                        <div class="flex space-x-3">
+                            <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 w-full">Buy</button>
+                            <button class="border border-green-600 text-green-600 px-4 py-2 rounded hover:bg-green-50 w-full">Sell</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sell Section -->
+    <section id="sell" class="py-16 bg-green-50 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Are You a Farmer?</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">Sell your harvest on our platform — easy, fast & profitable!</p>
+            <button class="bg-green-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-700 transition">Register to Sell</button>
+        </div>
+    </section>
+
+    <!-- Billing Section -->
+    <section id="billing" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Billing & Orders</h2>
+            <p class="text-center text-gray-600 mb-8">View your purchase history, download invoices, and manage payments.</p>
+
+            <div class="bg-gray-50 rounded-lg p-6">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="border-b">
+                            <th class="py-3 px-4 font-semibold">Order ID</th>
+                            <th class="py-3 px-4 font-semibold">Date</th>
+                            <th class="py-3 px-4 font-semibold">Amount</th>
+                            <th class="py-3 px-4 font-semibold">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="py-3 px-4">ORD-2025-001</td>
+                            <td class="py-3 px-4">Mar 25, 2025</td>
+                            <td class="py-3 px-4">৳ 480</td>
+                            <td class="py-3 px-4"><span class="bg-green-100 text-green-800 px-2 py-1 rounded">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">ORD-2025-002</td>
+                            <td class="py-3 px-4">Mar 27, 2025</td>
+                            <td class="py-3 px-4">৳ 120</td>
+                            <td class="py-3 px-4"><span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">Processing</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="text-center mt-6">
+                    <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-6 rounded">Download Invoice</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+            <p class="text-lg text-gray-700 mb-2">Phone: +8801401445752</p>
+            <p class="text-lg text-gray-700 mb-2">Email: Agro17@example.com</p>
+            <p class="text-lg text-gray-700">Address: Dhaka, Bangladesh</p>
+        </div>
+    </section>
+
+   
